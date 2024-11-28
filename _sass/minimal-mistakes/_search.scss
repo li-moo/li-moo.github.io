@@ -65,14 +65,16 @@
     outline: none;
     box-shadow: none;
     background-color: transparent;
-    font-size: $type-size-3;
+    // font-size: $type-size-1;
+    font-size: 18px;
 
     @include breakpoint($large) {
-      font-size: $type-size-2;
+      // font-size: $type-size-1;
+      font-size: 20px;
     }
 
     @include breakpoint($x-large) {
-      font-size: $type-size-1;
+      font-size: 20px;
     }
   }
 
@@ -88,7 +90,7 @@
 
   .results__found {
     margin-top: 0.5em;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
   }
 
   .archive__item {

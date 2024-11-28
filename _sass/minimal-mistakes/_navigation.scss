@@ -155,10 +155,10 @@
   }
 }
 
-.page__content + .pagination,
-.page__meta + .pagination,
-.page__share + .pagination,
-.page__comments + .pagination {
+.page__content+.pagination,
+.page__meta+.pagination,
+.page__share+.pagination,
+.page__comments+.pagination {
   margin-top: 1.5em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
@@ -200,8 +200,8 @@
       margin-left: 0;
     }
   }
-  
-  img{
+
+  img {
     -webkit-transition: none;
     transition: none;
   }
@@ -395,7 +395,7 @@
     }
 
     /* selected*/
-    input:checked + label {
+    input:checked+label {
       color: white;
       background-color: mix(white, #000, 20%);
 
@@ -412,7 +412,7 @@
       transform: rotate(90deg);
     }
 
-    input:checked + label:hover:after {
+    input:checked+label:hover:after {
       -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
       transform: rotate(0);
@@ -459,6 +459,7 @@
     margin-left: 1em;
     padding: 0 0 0 1em;
     border-left: 3px solid rgba($primary-color, 0.2);
+
     li {
       padding: 0.1em 0 0.1em 0;
     }
@@ -493,10 +494,11 @@
 }
 
 @include breakpoint(max-width $large - 1px) {
-  .nav__list input:checked ~ .nav__items {
+  .nav__list input:checked~.nav__items {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-    max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
+    max-height: 9999px;
+    /* exaggerate max-height to accommodate tall lists*/
     overflow: visible;
     opacity: 1;
     margin-top: 1em;
@@ -530,7 +532,7 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $text-color;
-  background-color:$background-color;
+  background-color: $background-color;
   border-radius: $border-radius;
   padding: 0.5em 0.5em 0.5em 0.5em;
 
@@ -541,7 +543,8 @@
     background: inherit;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    border-bottom: 1.5px solid rgba($primary-color, 0.3);
+    border-left: 1.5px solid rgba($primary-color, 0.3);
+    padding-left: 10px;
   }
 
   // Scrollspy marks toc items as .active when they are in focus
@@ -567,32 +570,34 @@
     color: $text-color;
     font-weight: 400;
     line-height: 1.5;
-    border-bottom: 1.5px solid rgba($primary-color, 0.3);
+    // border-bottom: 1.5px solid rgba($primary-color, 0.3);
+    border-left: 1.5px solid rgba($primary-color, 0.3);
 
     &:hover {
       font-weight: 500;
       font-size: 100%;
+      border-left: 2.5px solid rgba($primary-color, 0.3);
     }
   }
 
-  li ul > li a {
+  li ul>li a {
     padding-left: 1.25rem;
     font-weight: normal;
   }
 
-  li ul li ul > li a {
+  li ul li ul>li a {
     padding-left: 1.75rem;
   }
 
-  li ul li ul li ul > li a {
+  li ul li ul li ul>li a {
     padding-left: 2.25rem;
   }
 
-  li ul li ul li ul li ul > li a {
+  li ul li ul li ul li ul>li a {
     padding-left: 2.75rem;
   }
 
-  li ul li ul li ul li ul li ul > li a {
+  li ul li ul li ul li ul li ul>li a {
     padding-left: 3.25rem
   }
 }
