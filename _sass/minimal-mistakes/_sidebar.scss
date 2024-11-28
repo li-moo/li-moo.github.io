@@ -36,7 +36,7 @@
 
   }
 
-  > * {
+  >* {
     /* sidebar left top & right margin */
     // margin-top:1.2em;
     /* 2022.01.25 avatar img margin top decrease */
@@ -172,6 +172,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $menufont;
   /* 2022.01.23 font size & weight change*/
@@ -183,6 +184,7 @@
   margin: 0;
   font-size: 1.4em;
   font-family: $menufont;
+
   @include breakpoint($large) {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -212,7 +214,7 @@
   }
 
   .author__urls {
-    
+
     span.label {
       padding-left: 5px;
     }
@@ -361,4 +363,3 @@
     margin-right: initial;
   }
 }
-

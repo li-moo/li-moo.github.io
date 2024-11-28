@@ -17,8 +17,8 @@ $block-quote-background-color: rgba(166, 75, 194, 0.116) !default;
 $form-background-color: mix(#000, $background-color, 15%) !default;
 $footer-background-color: mix(rgb(39, 39, 45), $background-color, 30%) !default;
 $link-color: mix($primary-color, $text-color, 40%) !default;
-$link-color-hover: mix(#efc4f7, $link-color, 25%) !default;
-$link-color-visited: mix(#b7b8ea, $link-color, 25%) !default;
+$link-color-hover: mix(#dfa3ea, $link-color, 25%) !default;
+$link-color-visited: mix(#9fa0e6, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#fff, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#fff, $background-color, 30%) !default;
@@ -85,4 +85,5 @@ h6,
 p,
 span {
   color: $text-color !important;
+
 }
