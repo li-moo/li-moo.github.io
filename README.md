@@ -1,4 +1,6 @@
 ## 🦥 `Minimal Mistakes theme customized by choiiis`
+로컬 서버로 열기 
+bundle exec jekyll serve 
 
 📎 **블로그 바로 가기**
 [`https://choiiis.github.io/`](https://choiiis.github.io/)

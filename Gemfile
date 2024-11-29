@@ -6,3 +6,4 @@ gem 'jekyll-sitemap'
 gem "webrick"
 gem "rackup"
 gem "sinatra", ">= 3", "< 4"
+gem 'jekyll-sass-converter'

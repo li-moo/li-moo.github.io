@@ -203,7 +203,7 @@ kramdown:
 
 # Sass/SCSS
 sass:
-  sass_dir: _sass
+  sass_dir: _sass  # _sass , assets/css 
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
