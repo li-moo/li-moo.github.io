@@ -5,13 +5,13 @@
 /* Colors */
 $background-color: rgb(46, 46, 55) !default; // Dark background color
 $text-color: rgb(245, 243, 243) !default; // White text color
-$primary-color: mix(rgb(156, 123, 165), $background-color, 90%) !default; // Primary color for links, buttons, etc.
+$primary-color: mix(rgb(194, 145, 208), $background-color, 90%) !default; // Primary color for links, buttons, etc.
 $border-color: mix(#000, $background-color, 20%) !default; // Darker border color
 
 $code-background-color: mix(#000, $background-color, 20%) !default;
 $code-background-color-dark: mix(#000, $background-color, 20%) !default;
 
-$mark-highlight-color: rgba(178, 79, 208, 0.3) !default;
+$mark-highlight-color: rgba(210, 134, 234, 0.3) !default;
 $block-quote-background-color: rgba(166, 75, 194, 0.116) !default;
 
 $form-background-color: mix(#000, $background-color, 15%) !default;
@@ -60,7 +60,6 @@ $base0c: #1faaaa !default;
 $base0d: #81a6e6 !important;
 $base0e: #cca6ed !important;
 $base0f: #cc6633 !default;
-$base0g: #ff4580 !important;
 
 
 // $base00: #ffffff !default;

@@ -16,7 +16,7 @@ date: 2023-10-28
 last_modified_at: 2023-10-28
 ---
 
-## filter()
+## filter() 요소 추출
 JavaScript에서 filter() 함수는 배열에서 특정 조건에 맞는 요소들만 추출해 새로운 배열을 반환하는 메서드입니다. 
 {: .notice--primary}
 
@@ -29,7 +29,7 @@ const filteredNumbers = numbers.filter(number => number > 2);
 
 console.log(filteredNumbers); // 결과 [3, 4, 5]
 ```
-filter(조건식)
+`filter(요소 => 조건식)`
 
 <br>
 
