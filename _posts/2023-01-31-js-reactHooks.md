@@ -18,8 +18,7 @@ last_modified_at: 2023-01-31
 
 ## ⭐React Hooks 란?
 Hook은 React 버전 16.8부터 React요소로 새로 추가된 기능입니다.  
-기존 Class 바탕의 코드를 작성할 필요 없이 상태 값과 여러 React의 가능을 사용할 수 있습니다.  
-[React 공식문서 바로가기](https://ko.react.dev/learn)
+기존 Class 바탕의 코드를 작성할 필요 없이 상태 값과 여러 React의 가능을 사용할 수 있습니다. [React 공식문서](https://ko.react.dev/learn)
 {: .notice--primary}  
 
 ### 1. useState

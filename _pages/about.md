@@ -1,8 +1,8 @@
 ---
-title: "Hi all! I'm OOOOOO👋🏻"
+title: "Hi all! I'm li-moo👋🏻"
 permalink: /about/
 layout: single
 comments: false
 ---
 
-본인 소개 여기에 입력
+부산에 사는 개발자입니다.
