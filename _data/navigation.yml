@@ -18,11 +18,12 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "JS"
-    url: /categories/JS/
+  - title: "☁️"
+    url: /categories/☁️/
+  - title: "FE"
+    url: /categories/FE/
+  - title: "BE"
+    url: /categories/BE/
   - title: "CS"
     url: /categories/CS/
-  - title: "Categories3"
-    url: /categories/categories3/
-  - title: "Categories4"
-    url: /categories/categories4/
+    

@@ -1,9 +1,9 @@
 ---
-title: "JS"
+title: "☁️"
 layout: category
-permalink: /categories/JS/
+permalink: /categories/☁️/
 author_profile: true
-taxonomy: JS
+taxonomy: ☁️
 sidebar:
   nav: "categories"
 ---

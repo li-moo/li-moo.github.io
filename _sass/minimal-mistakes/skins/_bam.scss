@@ -5,7 +5,7 @@
 /* Colors */
 $background-color: rgb(46, 46, 55) !default; // Dark background color
 $text-color: rgb(245, 243, 243) !default; // White text color
-$primary-color: mix(rgb(187, 146, 199), $background-color, 90%) !default; // Primary color for links, buttons, etc.
+$primary-color: mix(rgb(119, 112, 121), $background-color, 90%) !default; // Primary color for links, buttons, etc.
 $border-color: mix(#000, $background-color, 20%) !default; // Darker border color
 
 $code-background-color: mix(#000, $background-color, 20%) !default;
@@ -43,23 +43,41 @@ $navicon-link-color-hover: mix(#fff, $background-color, 30%) !default;
   background-color: $form-background-color;
 }
 
-/* Dark syntax highlighting (base16) */
+/* bam syntax highlighting (base16) */
 $base00: #ffffff !default;
 $base01: #e0e0e0 !default;
 $base02: #d0d0d0 !default;
 $base03: #b0b0b0 !default;
-$base04: #000000 !default;
-$base05: #101010 !default;
+$base04: #7c7c7d !important; //주석
+$base05: #f4bac2 !important;
 $base06: #151515 !default;
 $base07: #202020 !default;
 $base08: #ff0086 !default;
 $base09: #fd8900 !default;
 $base0a: #aba800 !default;
-$base0b: #00c918 !default;
+$base0b: #f6f3da !important;
 $base0c: #1faaaa !default;
-$base0d: #3777e6 !default;
-$base0e: #ad00a1 !default;
+$base0d: #81a6e6 !important;
+$base0e: #cca6ed !important;
 $base0f: #cc6633 !default;
+
+
+// $base00: #ffffff !default;
+// $base01: #e0e0e0 !default;
+// $base02: #d0d0d0 !default;
+// $base03: #b0b0b0 !default;
+// $base04: #000000 !default;
+// $base05: #101010 !default;
+// $base06: #151515 !default;
+// $base07: #202020 !default;
+// $base08: #ff0086 !default;
+// $base09: #fd8900 !default;
+// $base0a: #aba800 !default;
+// $base0b: #00c918 !default;
+// $base0c: #1faaaa !default;
+// $base0d: #3777e6 !default;
+// $base0e: #ad00a1 !default;
+// $base0f: #cc6633 !default;
 
 /* Next/previous buttons */
 .pagination--pager {
