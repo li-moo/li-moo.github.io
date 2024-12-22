@@ -1,13 +1,13 @@
 ---
-title: "[JS] .filter() "
-excerpt: ".filter()로 검색 기능 만들기"
+title: "[JS] Node server "
+excerpt: "Node server 배워보기"
 
 categories:
-  - FE
+  - BE
 tags:
   - [tag1, tag2]
 
-permalink: /FE/js]Filter/
+permalink: /BE/learnNodeServer/
 
 toc: true
 toc_sticky: true
