@@ -22,7 +22,7 @@ Svelte는 모듈에서 다루는 다른 프레임워크와는 다른 웹앱 구�
 <br>
 
 ### 1. Svelte 기본 구조
-```javascript
+```svelte
 <script>
   // JavaScript(script작성)
   let name = "Svelte";

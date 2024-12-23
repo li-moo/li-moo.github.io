@@ -53,7 +53,7 @@ useEffect(() => {
 <br>
 
 ### 1. useState [+1] Btn
-```javascript
+```react
 // App.js
 // 버튼 클릭으로 +1 된 값 출력하기
 import { useState } from 'react'; //useState 훅을 가져 옴
@@ -91,7 +91,7 @@ useState를 사용하여 버튼 클릭 시 숫자를 증가시키는 예제입�
 <br>
 
 ### 2. useEffect 사용법
-```javascript
+```react
 // App.js
 import { useEffect, useState } from 'react';
 import React from 'react';
