@@ -45,6 +45,7 @@ last_modified_at: 2024-12-02
 Svelte는 JavaScript 변수만 수정해도 화면이 자동으로 업데이트되지만,   
 `const [count, setCount] = useState(0); `   
 React는 상태를 변경하려면 setState 함수를 호출해야 화면이 업데이트됩니다.
+[컴파일 타임]()
 
 <br>
 
@@ -141,3 +142,101 @@ function App() {
   {/each}
 </ul>
 ```
+
+##### 1. 반복으로 데이터 표시 `{#each 데이터 as 요소}`
+```svelte
+<script>
+  let items = ["Apple", "Banana", "Cherry"];
+</script>
+
+<ul>
+  {#each items as item}
+    <li>{item}</li>
+  {/each}
+</ul>
+```
+##### 2. 인덱스 활용 `{#each 데이터 as 요소, 인덱스}`
+```svelte
+<script>
+  let items = ["Apple", "Banana", "Cherry"];
+</script>
+
+<ul>
+  {#each items as item, index}
+    <li>{index + 1}: {item}</li>
+  {/each}
+</ul>
+```
+##### 3. 고유 식별자 `{#each 데이터 as 요소 (key)} `
+```svelte
+<script>
+  let users = [
+    { id: 1, name: "Alice" },
+    { id: 2, name: "Bob" },
+    { id: 3, name: "Charlie" }
+  ];
+</script>
+
+<ul>
+  {#each users as user (user.id)}
+    <li>{user.name}</li>
+  {/each}
+</ul>
+``` 
+
+#### Q. react에서 조건부 렌더링과 svelte 무엇이 다를까요?
+
+```jsx
+{imageLoading ? <Loader scale="0.5" absolute={true} /> : null} && 연산자
+```
+```jsx
+{imageLoading && <Loader scale="0.5" absolute={true} />}
+```
+##### 4. 빈 데이터 처리 `{:else}`
+```svelte
+<script>
+  let items = [];
+</script>
+
+<ul>
+  {#each items as item}
+    <li>{item}</li>
+  {:else}
+    <li>No items found.</li>
+  {/each}
+</ul>
+```
+
+#### svelte Else-if 문법(Else-if blocks)
+```svelte
+{#if 조건}
+  <!-- 조건이 true일 때 -->
+{:else if 다른조건}
+  <!-- 첫 번째 조건이 false이고, 다른조건이 true일 때 -->
+{:else}
+  <!-- 모든 조건이 false일 때 -->
+{/if}
+```
+아래는 svelte 공식 문서의 예시이다.
+```svelte
+<script>
+	let count = $state(0);
+
+	function increment() {
+		count += 1;
+	}
+</script>
+
+<button onclick={increment}>
+	Clicked {count}
+	{count === 1 ? 'time' : 'times'}
+</button>
+
+{#if count > 10}
+	<p>{count} is greater than 10</p>
+{:else}
+	<p>{count} is between 0 and 10</p>
+{/if}
+```
+버튼 클릭 횟수가 0~10사이이면 `{count} is between 0 and 10`  
+10을 초과하면 `{count} is greater than 10`
