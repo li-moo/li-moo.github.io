@@ -45,7 +45,7 @@ last_modified_at: 2024-12-02
 Svelte는 JavaScript 변수만 수정해도 화면이 자동으로 업데이트되지만,   
 `const [count, setCount] = useState(0); `   
 React는 상태를 변경하려면 setState 함수를 호출해야 화면이 업데이트됩니다.
-[컴파일 타임]()
+\> [빌드 타임이란](https://li-moo.github.io/CS/Compile&Run&Buildtime/)
 
 <br>
 
