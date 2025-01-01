@@ -91,7 +91,6 @@ func main() {
 #### 반복문
 ```go
 package main
-
 import "fmt"
 
 func main() {
@@ -270,4 +269,4 @@ Go에는 표준 라이브러리가 포함되어 있으며, 주요 패키지는 �
 - encoding/json : JSON 인코딩 및 디코딩
 
 <br>
-다음 시간에는 고루틴 (Goroutines)과 채널 (Channels)에 대해 알아보겠습니다.
+다음 시간에는 고루틴(Goroutines)과 채널(Channels)에 대해 알아보겠습니다.
